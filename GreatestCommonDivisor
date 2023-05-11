@@ -1,0 +1,26 @@
+public class GreatestCommonDivisor 
+{
+    public static int getGreatestCommonDivisor (int first, int second)
+       {
+           int summary =1;
+               if ( first < 10 || second < 10)
+                 {
+                       System.out.println("Invalid value");
+                                                 return -1;
+                 } else 
+                   {
+                       for (int d =1; d <= first && d <= second;d++ )
+                          {
+                                  if (first % d == 0 && second % d == 0) 
+                           {
+                              summary = d;
+                }
+            }
+        }
+
+                           return summary;
+        
+    }
+}
+
+// In this section, we would need to use basic Math knowledge due we are looking for the greatest common divisor, in this case, FIRST and SECOND.
