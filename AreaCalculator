@@ -1,0 +1,32 @@
+public class AreaCalculator 
+{
+    public static double area (double radius) 
+   {
+            if(radius < 0.0)
+            {
+                    return -1.0; // In this section, you can set the ¨System.out.println/print("Invalid value"); however, 
+                    since it is testing by the Udemy system, you can leave the code as it is.
+            }else{
+                 return (Math.PI * radius * radius);
+                 }
+    }
+ 
+    public static double area (double x,double y)
+   {
+     if(x < 0)
+      {
+           return -1;
+      } else if(y < 0) 
+        {
+            return -1;
+        }else
+        {
+            double areaofretangle = x * y;
+            return areaofretangle;
+        }       
+   }
+}
+
+// NOTE : This is just an excercise solution from the Java Programming Masterclass updated to Java 17 by UDEMY, 
+if you compile this thorugh an IDE, you might not get a result in return, since you need to call or use an argument 
+to call the  methods.
