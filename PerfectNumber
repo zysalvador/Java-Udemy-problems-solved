@@ -1,0 +1,29 @@
+public class PerfectNumber 
+{
+    public static boolean isPerfectNumber (int number) 
+    {
+        int suma =0;
+        
+        if ( number < 1 )
+        {
+            return false;
+        }
+        
+        for (int i =1; i < number ; i++)
+        {
+            if (number % suma == 0)
+            {
+                System.out.println(number);  // In this case you can rid the line  ¨System.out.println(number); ¨ or write another thing you 
+                  would like to add on your code, since it is does not matter or it will not cause any error due the operation is 
+                  executing on line 14.
+            }
+        }
+        return number == suma;
+    }
+}
+
+// NOTE: This operator % is used to do the basic math in order to confirm if the number is Perfect since a positive number is equal to the sum of its proper positive divisors.  
+If a number is a divisor of another number, then the remainder of the division is zero.
+
+In the case of checking if a number is perfect, we need to find all the proper divisors of a number.
+Proper divisors are all the divisors of a number except for the number itself. For example, the proper divisors of 6 are 1, 2, and 3.
